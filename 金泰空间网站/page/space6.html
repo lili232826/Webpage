@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minmum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>金泰租赁</title>
+	<link rel="stylesheet" href="../plugin/layui-v2.3.0/layui/css/layui.css">
+	<link rel="stylesheet" href="../css/aniamte.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<link rel="stylesheet" href="../css/media.css">
+	<script src="../plugin/layui-v2.3.0/layui/layui.js"></script>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery.aniview.js"></script>
+	<script src="../js/public.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!-- 导航 -->
+	<div class="header-fixed">
+		<div class="jt-header pc-header layui-clear flex-center-end ">
+			<div class="logo-img">
+				<a href="../" alt="回首页"><img src="../img/nav_logo.png" alt="租赁logo"></a>
+			</div>
+			<ul class="layui-nav " lay-filter="">
+			  <li class="layui-nav-item">
+			  	<a href="../index.html">首页</a>
+			  </li>
+			  <li class="layui-nav-item">
+			  	<a href="javascript:void(0)">写字楼租赁</a>
+			  	<span class="nav-jiao"></span>
+			  	<div class="second-pic-wrap ">
+		  			<a href="../page/space.html?page=0"><dl><dt><img src="../img/jintai.png" alt=""></dt><dd>金泰大厦</dd></dl></a>
+		  			<a href="../page/space2.html?page=1"><dl><dt><img src="../img/guoji.png" alt=""></dt><dd>金泰国际大厦</dd></dl></a>
+		  			<a href="../page/space3.html?page=3"><dl><dt><img src="../img/guoyi.png" alt=""></dt><dd>金泰国益大厦</dd></dl></a>
+		  			<a href="../page/space4.html?page=2"><dl><dt><img src="../img/fudi.png" alt=""></dt><dd>金泰富地大厦</dd></dl></a> 
+		  			<div class="second-nav-mark"></div>			
+		  		</div>
+			  </li>
+			  <li class="layui-nav-item">
+			  	<a href="javascript:void(0)">能+空间</a>
+			  	<span class="nav-jiao"></span>
+				<div class="second-pic-wrap flex-center">
+		  			<a href="../page/space5.html?page=4"><dl><dt><img src="../img/jintai_space.jpg" alt=""></dt><dd>金泰能+空间</dd></dl></a>
+		  			<a href="../page/space6.html?page=5"><dl><dt><img src="../img/guoyi_space.jpg" alt=""></dt><dd>金泰国益能+空间</dd></dl></a>
+		  			<a href="../page/space7.html?page=6"><dl><dt><img src="../img/fudi_space.jpg" alt=""></dt><dd>金泰富地能+空间</dd></dl></a>
+		  			<div class="second-nav-mark"></div>
+		  		</div>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="../aboutUs.html">关于我们</a>
+			  </li>
+			</ul>
+			<!-- <div class="phone-num">
+				<i class="phone-icon"></i>
+				010-12345678
+			</div> -->
+		</div> 
+		<header class="cd-morph-dropdown nav-open">
+			<a href="../" title="回首页" class="alogo"><img src="../img/nav_logo.png" class="logo"></a>                
+			<a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+			<div class="morph-dropdown-wrapper">
+				<ul>
+					<li class="dropdown gallery">						
+						<div class="content">	
+							<ul>
+								<li><a href="../index.html">首页</a></li>
+								<li class="layui-show">
+									<a href="">写字楼租赁</a>
+									<dl class="">
+								       <dd><a href="../page/space.html?page=0">金泰大厦</a></dd>
+				      				   <dd><a href="../page/space.html?page=1">金泰国际大厦</a></dd>
+				      				   <dd><a href="../page/space.html?page=3">金泰国益大厦</a></dd>
+				      				   <dd><a href="../page/space.html?page=2">金泰富地大厦</a></dd>			      				  
+								    </dl>								
+								</li>
+								<li>
+									<a href="javascript:;">能+空间</a>
+								    <dl class="">
+								      <dd><a href="../page/space.html?page=4">金泰大厦能+空间</a></dd>
+				      				   <dd><a href="../page/space.html?page=5">金泰国际大厦能+空间</a></dd>
+				      				   <dd><a href="../page/space.html?page=6">金泰富地大厦能+空间</a></dd>			
+								    </dl>
+								</li>
+							    <li class="layui-nav-item"><a href="../us.html">关于我们</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</header> 
+	</div>
+	<!-- 导航 /-->
+	<!-- 头部banner+轮播 -->
+	<div class="play-wrap">
+		
+		<div class="banner-page play-bg" id="header_banner" style="background: url(../img/banner/gy_space_banner.jpg)">
+		  	<!-- <img src="" alt="金泰空间"> -->
+		  	<!-- <span class=" left-btn-arrow btn-arrow"></span> -->
+		  	<span class="right-btn-arrow btn-arrow animated infinite shake">
+		  		<!-- <i class="layui-icon layui-icon-right"></i>
+		  		<i class="layui-icon layui-icon-right"></i> -->
+		  		<i class="layui-icon layui-icon-next"></i>
+		  	</span>
+		</div>
+		<!-- 预约场地 -->
+		<div class="form-wrap flex-center">
+			<div class="layui-form" lay-filter="orderForm">
+				<div class="layui-form-item" style="margin-top: 24px;">
+				    <div class="layui-input-inline">
+				      <select name="buildName" lay-verify="buildName"  id="selectBuild" >
+				        <option value="">请选择大厦</option>
+				        <option value="0" selected>金泰大厦</option>
+				        <option value="1">金泰国际大厦</option>
+				        <option value="2">金泰富地大厦</option>
+				        <option value="3">金泰国益大厦</option>
+				        <option value="4">金泰能+空间</option>
+				        <option value="5">金泰富地能+空间</option>
+				        <option value="6">金泰国益能+空间</option>
+				      </select>
+				    </div>
+					<div class="layui-input-inline" >
+				      <input type="text" name="visvitDate" placeholder="来访时间" autocomplete="off" class="layui-input" id="visvitDate" lay-verify="visvitDate">
+				    </div>
+				    <div class="layui-input-inline" >
+				      <input type="text" name="name" placeholder="姓名" autocomplete="off" class="layui-input" lay-verify="name">
+				    </div>
+				    <div class="layui-input-inline" style="margin-bottom:10px">
+				      <input type="text" name="phone" placeholder="电话" autocomplete="off" class="layui-input" lay-verify="phone">
+				    </div>
+				    <div class="layui-input-inline">
+				      <button class="layui-btn" lay-submit lay-filter="formOrder" style="background-color: #ef232c;color: #fff;text-align: center;width:190px;">预约参观</button>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部轮播 /-->
+	<!-- 内容介绍 -->
+	<div class="content-index content-container" style="position: relative;">
+		<div class="layui-tab layui-tab-brief tab-fixed" lay-filter="tabFixed">
+			<ul class="layui-tab-title ">
+				<li class="layui-this" lay-id="#introduce"><a>空间介绍</a></li>
+				<li class="" lay-id="#service"><a>设施服务</a></li>
+				<li class="" lay-id="#traffic"><a>交通贴士</a></li>
+			</ul>
+		</div>
+		<div class="cont-wrap">
+			<div class="introduce">
+				<div id="introduce" style="position: relative;"></div>
+				<h4>能+空间(金泰富地大厦)空间房型</h4>
+				<div class="describe-content">
+					金泰大厦位于朝阳区西坝河畔，总建筑面积为4.5万平方米，总楼层地上29层，地下3层。其中6至29层为写字楼，约27,000平方米；一层至五层约12,000平米，大厦采用比利时进口LOW-E的钢化玻璃，框架型结构，大厦均为大开间设计，布局方正，使用率高，大窗户及合理进深，促进采光及设计灵活性。
+				</div>
+				<!-- 四个图文展示 -->
+				<div class="tab-second-wrap">
+					<!-- <ul class="scaling-wrap  scaling-wrap-2 room flex-center clearfix">
+						<li>
+							<div class="">
+								<dl>
+									<dt class="tit-pic">
+										<img src="../img/room/room_jt (1).jpg" alt="金泰大厦能加空间room">
+										<div class="mask flex-center">
+											<span class="more-btn">查看更多</span>
+										</div>
+									</dt>
+									<dd>
+										<h3>2人办公司</h3>
+										<p>楼简介文案办公楼简介文案文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办</p>
+									</dd>
+								</dl>
+								
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<dl>
+									<dt class="tit-pic">
+										<img src="../img/room/room_jt (2).jpg" alt="金泰大厦能加空间room">
+										<div class="mask flex-center">
+											<span class="more-btn">查看更多</span>
+										</div>
+									</dt>
+									<dd>
+										<h3>4人办公司</h3>
+										<p>楼简介文案办公楼简介文案文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办</p>
+									</dd>
+								</dl>
+								
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<dl>
+									<dt class="tit-pic">
+										<img src="../img/room/room_jt (3).jpg" alt="金泰大厦能加空间room">
+										<div class="mask flex-center">
+											<span class="more-btn">查看更多</span>
+										</div>
+									</dt>
+									<dd>
+										<h3>4人办公司</h3>
+										<p>楼简介文案办公楼简介文案文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办</p>
+									</dd>
+								</dl>
+								
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<dl>
+									<dt class="tit-pic">
+										<img src="../img/room/room_jt (4).jpg" alt="金泰大厦能加空间room">
+										<div class="mask flex-center">
+											<span class="more-btn">查看更多</span>
+										</div>
+									</dt>
+									<dd>
+										<h3>6人办公司</h3>
+										<p>楼简介文案办公楼简介文案文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办</p>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul> -->
+				</div> 
+			</div>
+			<div class="service" >
+				<div id="service" style="top: -83px; position: relative;"></div>
+				<h4>设施服务</h4>
+				<div class="describe-content">
+					<ul>
+						<!-- <li class="flex"><span>基础设施</span><span>金泰大厦地下一层至五层为商业配套设施，配备有：会议室、银行、餐厅、咖啡厅、茶舍、库房、美容机构等，为促进人性化的办公条件，员工餐厅设于地上二层，让员工在繁忙的工作中享有怡人的用餐环境，为租户提供全面及以人为本的办公配套设施。</span></li>
+						<li class="flex"><span>办公设施</span><span>案办公楼简介文案办公楼简介文案办公楼简介文案办公楼简介文案办楼简介文案办公楼简介文案文案办公楼简介文案办公楼简介</span></li> -->
+						<li class="flex"><span>休闲设施</span><span>金泰大厦地下一层至五层为商业配套设施，配备有：会议室、银行、餐厅、咖啡厅、茶舍、库房、美容机构等，为促进人性化的办公条件，员工餐厅设于地上二层，让员工在繁忙的工作中享有怡人的用餐环境，为租户提供全面及以人为本的办公配套设施。</span></li>
+						<li class="flex"><span>人工服务</span><span>前台、保洁、物业客服、24h保安</span></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="traffic">
+				<div id="traffic" style="top: -83px; position: relative;"></div>
+				<h4>交通贴士</h4>
+				<div class="describe-content flex-between-2">
+					<ul>
+						<li class="flex"><span>区域信息</span><span>
+金泰大厦位于三元桥商圈，毗邻西坝河南路，大厦东临西坝河及绿化公园，西靠地铁柳芳站，从二环及三环均可畅通直达，距机场仅15分钟车程，步行数分钟即可到达近20条公交线路的车站，是西坝河地区的地标性建筑.</span></li>
+						<li class="flex"><span>交通信息</span><span>13号线地铁柳芳站（B出口）50米</span></li>
+						<li class="flex"><span>详细地址</span><span>北京市朝阳区西坝河南路1号金泰大厦</span></li>
+					</ul>
+					<div class="map-wrap">
+						<a href="https://www.amap.com/search?query=金泰大厦"><img src="../img/space_map (1).jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 内容介绍 /-->
+	<!--  内容八 底部信息 -->
+	<div  class="footer">
+		<div class="us-msg">
+			<p class="title">联系我们</p>
+			<ul class="flex">
+				<li>
+					<p>金泰大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市朝阳区西坝河南路1号</p>
+				</li>
+				<li>
+					<p>金泰国益大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市朝阳区朝阳北路103路</p>
+				</li>
+				<li>
+					<p>金泰国际大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市朝阳区建国路93号院万达广场</p>
+				</li>
+				<li>
+					<p>金泰富地大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市海淀区安宁庄西路9号院</p>
+				</li>
+				<li>
+					<p>金泰能+空间大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市朝阳区西坝河南路1号金泰大厦5F</p>
+				</li>
+				<li>
+					<p>金泰国益能+空间大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p>地址：朝阳区朝阳北路103号国益大厦3F</p>
+				</li>
+				<li>
+					<p>金泰富地能+空间大厦</p>
+					<p><img src="../img/icon/f_ic_phone.png" alt="">电话：010-1234-5678</p>
+					<p><img src="../img/icon/f_icon_d.png" alt="">地址：北京市海淀区安宁庄西路9号院金泰富地大厦3F</p>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom-line"></div>
+		<div class="foot-cont clearfix flex-center">
+			<ul class="foot-links ">	
+				<li>
+					<span><a href="#">北京金泰租赁管理有限公司&nbsp;&nbsp;版权所有</a></span>					
+				</li>
+			</ul>
+			
+				<div class="footer-logo">	
+				</div>
+			
+		</div>
+		<div class="mobile-btn-wrap">
+			<button id="mobile-btn" class="layui-btn layui-btn-radius layui-btn-primary" style="width: 60%;border-color: #ef232c;color:#ef232c;font-weight: 600">预约参观</button>
+		</div>
+	</div>
+	<!--  内容八 底部信息/ -->
+	
+</div>
+<!-- 移动端的formyuyue -->
+<div class="mark" style="display: none;"></div>
+<div class="big_play" style="display: none;">
+		<div class="btn-close"><i class="layui-icon layui-icon-close"></i></div>
+		<div class="layui-carousel" id="big_play" lay-filter="big_play">
+		  <div carousel-item>
+		    <div><img src="../img/room/ji_space_play (1).jpg" alt="电梯间背景墙1"></div>
+		    <div><img src="../img/room/ji_space_play (2).jpg" alt="电梯间背景墙2"></div>
+		    <div><img src="../img/room/ji_space_play (3).jpg" alt="电梯间背景墙3"></div>
+		    <div><img src="../img/room/ji_space_play (4).jpg" alt="电梯间背景墙4"></div>
+		    <div><img src="../img/room/ji_space_play (5).jpg" alt="电梯间背景墙5"></div>
+		  </div>
+		</div>
+		<div class="info-play"><span class="index">1</span>/<span class="length">30</span><span class="msg-txt">电梯间背景墙1</span></div>
+</div>
+<div class="form-wrap flex-center" id="mobile-form-wrap">
+	<div class="btn-close"><i class="layui-icon  layui-icon-close"></i>	</div>
+	<div class="layui-form mobile-form-wrap" >
+		<div class="layui-form-item" style="margin-top: 15px;">
+		    <div class="layui-input-block">
+		      <select name="buildName" lay-verify="buildName">
+		        <option value="">请选择大厦</option>
+				        <option value="0">金泰大厦</option>
+				        <option value="1">金泰国际大厦</option>
+				        <option value="2">金泰富地大厦</option>
+				        <option value="3">金泰国益大厦</option>
+				        <option value="4">金泰能+空间</option>
+				        <option value="5">金泰富地能+空间</option>
+				        <option value="6">金泰国益能+空间</option>
+		      </select>
+		    </div>
+			<div class="layui-input-block" >
+		      <input type="text" name="visvitDate" placeholder="来访时间" autocomplete="off" class="layui-input" id="visvitDateM" lay-verify="visvitDate" style="">
+		    </div>
+		    <div class="layui-input-block" >
+		      <input type="text" name="name" placeholder="姓名" autocomplete="off" class="layui-input" lay-verify="name">
+		    </div>
+		    <div class="layui-input-block" style="margin-bottom:10px">
+		      <input type="text" name="phone" placeholder="电话" autocomplete="off" class="layui-input" lay-verify="phone">
+		    </div>
+		    <div class="layui-input-block">
+		      <span class="layui-btn" lay-submit lay-filter="formOrder" style="background-color: #ef232c;color: #fff;text-align: center;width:100%;">预约参观</span>
+		    </div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+var form=null;
+window.onload=function(){
+	var href=window.location.href;
+	if(href.indexOf("?page")!==-1){
+		var pageStr=href.substr(href.indexOf('?')),
+			page=pageStr.split("=")[1];
+			$("#selectBuild").val(page);
+			console.log(form,'form')
+			form.render("select","orderForm");
+			if(page>=4){
+				$(".pc-header li.layui-nav-item").eq(2).addClass('layui-this')
+			}else{
+				$(".pc-header li.layui-nav-item").eq(1).addClass('layui-this')
+			}
+	}
+	
+	console.log(page,"href")
+}
+var carousel=null;
+var data=[
+		{
+			"src":"../img/room/ji_space_play (6).jpg",
+			"info":"我是图片的描述6"
+		},
+		{
+			"src":"../img/room/ji_space_play (7).jpg",
+			"info":"我是图片的描述7"
+		},
+		{
+			"src":"../img/room/ji_space_play (8).jpg",
+			"info":"我是图片的描述8"
+		},
+		{
+			"src":"../img/room/ji_space_play (9).jpg",
+			"info":"我是图片的描述9"
+		},
+		{
+			"src":"../img/room/ji_space_play (10).jpg",
+			"info":"我是图片的描述10"
+		}
+	
+	]
+	$(function(){
+		//
+		layui.use(['element','carousel',"form"], function(){
+		  var element = layui.element;
+		  carousel = layui.carousel;
+		  form=layui.form;
+		  
+		  //建造实例,主题房间轮播
+		  carousel.render({
+		    elem: '#room_play'
+		    ,height:"372px"
+		    ,width: '100%' //设置容器宽度
+		    ,arrow: 'always' //始终显示箭头
+		    //,anim: 'updown' //切换动画方式
+		    ,interval:2000
+		    ,indicator:"none"
+		    ,autoplay:false
+		  });
+		  //建造实例,主题房间_每一室轮播
+		  carousel.render({
+		    elem: '#room_grid_play'
+		    ,height:"372px"
+		    ,width: '640px' //设置容器宽度
+		    ,arrow: 'always' //始终显示箭头
+		    //,anim: 'updown' //切换动画方式
+		    ,interval:2000
+		    ,indicator:"none"
+		    ,autoplay:false
+		  });
+
+		  //大的轮播图
+			$(".btn-arrow").on("click",function(){
+				initPlayBig()
+				PlayBig();
+			})
+
+			//关闭轮播
+			$(".btn-close").on("click",function(){
+				$("html").css("overflow","visible");
+				$(".mark").hide();$('.big_play').hide();
+			})
+			
+			//点击room的大轮播的内容；
+			$(".room").on("click",".layui-btn",function(){
+				renderPlay(data);
+				initPlayBig();
+				PlayBig()
+			})
+
+		});	
+	})
+function initPlayBig(options){
+	var optionBig={
+	    elem: '#big_play'
+	    ,height:"600px"
+	    ,width: '100%' //设置容器宽度
+	    ,arrow: 'always' //始终显示箭头
+	    //,anim: 'updown' //切换动画方式
+	    //,interval:3000
+	    ,index:0
+	    ,indicator:"none"
+	    ,autoplay:false
+	  };
+	  $.extend(optionBig, options);
+	  //建造实例,头部轮播
+	 var bigPlay=carousel.render(optionBig);
+	 
+}
+function renderPlay(data){
+	$("#big_play").children("div").html('');
+	var str='';
+	for(var i=0;i<data.length;i++){
+		str+=' <div><img src="'+data[i]["src"]+'" alt="'+data[i]["info"]+'"></div>'
+	}
+	$("#big_play").children("div").html(str);
+	$(".length").text(data.length);
+	$(".msg-txt").text(data[1]["info"]);
+	$(".index").text(1);
+}
+function PlayBig(){
+	$("html").css("overflow","hidden");
+	$(".mark").show();$('.big_play').show();
+	var length=$("#big_play").children().children("div").length;
+		$(".length").text(length);
+	carousel.on('change(big_play)', function (obj) { //test1来源于对应HTML容器的 lay-filter="test1" 属性值
+		$(".index").text(obj.index+1);
+		var info=obj.item.children('img').attr("alt");
+		$(".msg-txt").text(info);
+        //console.log(obj.prevIndex); //上一个条目的索引
+        //console.log(obj.item,'jjj');      //当前条目的元素对象*/
+    });
+}	
+</script>
+</html>
